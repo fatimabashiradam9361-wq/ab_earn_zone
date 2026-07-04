@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src='//libtl.com/sdk.js' data-zone='11238472' data-sdk='show_11238472'></script></head>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AB Earn Zone</title>
+
+<!-- Monetag SDK -->
+<script src='//libtl.com/sdk.js' data-zone='11238472' data-sdk='show_11238472'></script>
+
 <style>
 body{
     font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f6f9;
-    text-align:center;
+    margin: 0;
+    background: #f4f6f9;
+    text-align: center;
 }
+
 header{
-    background:#1565c0;
-    color:white;
-    padding:30px;
+    background: #1565c0;
+    color: white;
+    padding: 30px;
 }
-section{
-    padding:20px;
-}
+
 .card{
-    background:white;
-    max-width:700px;
-    margin:20px auto;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 .btn{
-    display:inline-block;
-    background:#1565c0;
-    color:white;
-    text-decoration:none;
-    padding:12px 24px;
-    border-radius:6px;
+    display: inline-block;
+    background: #1565c0;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
 }
+
 footer{
-    margin-top:30px;
-    padding:15px;
-    background:#222;
-    color:white;
+    margin-top: 30px;
+    padding: 15px;
+    background: #222;
+    color: white;
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -51,23 +59,31 @@ footer{
 </header>
 
 <section>
+
     <div class="card">
         <h2>Welcome</h2>
-        <p>AB Earn Zone is a rewards platform where users can discover opportunities, complete tasks, and earn rewards.</p>
+        <p>Start earning rewards by watching ads and completing simple tasks.</p>
     </div>
 
     <div class="card">
-        <h2>Why Join Us?</h2>
-        <p>✔ Easy to use</p>
-        <p>✔ Reward opportunities</p>
-        <p>✔ Growing community</p>
+        <h2>Start Earning</h2>
+        <p>Click below to begin your rewards journey.</p>
+
+        <!-- Reward Button -->
+        <button class="btn" onclick="show_11238472().then(() => {
+            alert('Thanks for watching the ad!');
+        })">
+            🚀 Start Rewards
+        </button>
     </div>
 
     <div class="card">
-        <h2>Get Started</h2>
-        <p>Join our Telegram bot and start exploring opportunities.</p>
-        <a href="#" class="btn">Start Rewards</a>
+        <h2>How It Works</h2>
+        <p>1. Click Start Rewards</p>
+        <p>2. Watch ads</p>
+        <p>3. Earn rewards (future system)</p>
     </div>
+
 </section>
 
 <footer>
